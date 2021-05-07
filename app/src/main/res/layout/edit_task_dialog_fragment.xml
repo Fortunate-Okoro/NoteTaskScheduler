@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_task"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/editTask"
+        android:text="Edit Task"
+        android:textSize="16sp"
+        android:textColor="@color/peach_20"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etVenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/peach_10"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:hint="Venue" />
+
+    <EditText
+        android:id="@+id/etFullDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/peach_10"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:hint="Full Date"
+        android:onClick="showDatePickerDialog"/>
+
+    <EditText
+        android:id="@+id/etStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/peach_10"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:hint="Start Time"
+        android:onClick="showTimePickerDialog"/>
+
+    <EditText
+        android:id="@+id/etEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/peach_10"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:hint="End Time"
+        android:onClick="showTimePickerDialog" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:textSize="12sp"
+            android:layout_margin="10sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="12sp"
+            android:layout_margin="10sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

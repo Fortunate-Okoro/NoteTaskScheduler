@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notecreator.NoteCreatorActivity">
+
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note Title"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:hint="Note Title"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/placeHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/note_title"
+        app:srcCompat="@drawable/ic_create_192"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/chooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50sp"
+        android:text="Choose Image"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeHolder" />
+
+    <Button
+        android:id="@+id/saveImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50sp"
+        android:text="Save Image"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chooseImage"
+        app:layout_constraintTop_toBottomOf="@+id/placeHolder" />
+
+    <EditText
+        android:id="@+id/note_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note Description"
+        android:textSize="14sp"
+        android:paddingTop="20dp"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:hint="Note Title"
+        app:layout_constraintTop_toBottomOf="@+id/saveImage"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-36dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="16dp"
+        android:text="Full Date"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

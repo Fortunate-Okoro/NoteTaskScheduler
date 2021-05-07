@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_grey">#FF9C9C9C</color>
+    <color name="media_grey">#FF707070</color>
+    <color name="dark_grey">#FF5A5A5A</color>
+    <color name="red">#80FF0000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="peach">#FFF1ABB9</color>
+    <color name="peach_10">#FFEB92A9</color>
+    <color name="peach_20">#FFE27092</color>
+    <color name="peach_30">#FFDF5D86</color>
+    <color name="peach_40">#D14F7B</color>
+</resources>
